@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grading System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="">Student Grading calculator</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 red">
+              <h2>Your percentage is:</h2>
+              <h3 id="percentage">95%</h3>
+
+              <h2>Your grade is:</h2>
+              <h3 id="grade">A</h3>
+
+            </div>
+            <div class="col-sm-8 blue">
+                <h1>Enter Your Marks</h1>    
+                <div class="mb-3">                       
+                      <input type="text" class="form-control" placeholder="Maths" id="maths">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="Physics" id="physics">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Chemistry" id="chemistry">
+                      </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="english" id="english">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="hindi" id="hindi">
+                  </div>
+                    <button type="submit" onclick="getmarks()" class="btn btn-primary">Submit</button>
+                  
+            </div>
+          </div>
+
+        <div>
+            <div class="row">
+               <div class="col-sm-12 whit">
+                    <h3 id="pass"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script js starts -->
+    <script src="./script.js"></script>
+    <!-- Script js end -->
+</body>
+</html>
